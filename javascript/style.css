@@ -1,0 +1,52 @@
+body { 
+    background-color: rgb(62, 130, 255);
+    font-family: cursive;
+    font-size: 1.2rem;
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+
+}
+
+header { 
+color:white;
+text-align:center;
+font-weight: bolder;
+
+
+}
+
+img { 
+border-radius: 50%;
+width:250px;
+height:250px;
+background-size: cover;
+}
+
+
+
+
+
+
+
+
+.dados { 
+    background-color: white;
+    border-radius: 10px;
+    width:500px;
+    padding:10px;
+    margin: auto;
+    
+}
+
+
+
+footer { 
+text-align:center;
+color:white;
+font-weight: bolder;
+}
+
+#msg { 
+
+}
