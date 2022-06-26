@@ -1,7 +1,6 @@
 var fundo = document.getElementById('q1')
 var fundoNome = document.getElementById('nomePerso')
 var song = "narutosong.mp3"
-var song1 = "sasukesom.mp3"
 
 
 function narutoClassic() { 
@@ -34,7 +33,6 @@ function sasukeOrochimaro() {
 function sasukeShippuden() { 
     fundo.style.backgroundImage = 'url(sasukeShippuden.gif)'
     fundoNome.innerHTML = 'Sasuke Shippuden'
-    new Audio(song1).play()
 }
 // SASUKE A CIMA // 
 function sakuraClassic() { 
