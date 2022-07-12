@@ -1,0 +1,96 @@
+
+input[type=number]::-webkit-inner-spin-button { 
+    -webkit-appearance: none;
+    
+}
+input[type=number] { 
+   -moz-appearance: textfield;
+   appearance: textfield;
+
+}
+
+body { 
+    background-color: rgb(149, 62, 255);
+    font-family: Arial;
+    font-size: 1.2rem;
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+
+}
+
+header { 
+color:white;
+text-align:center;
+font-weight: bolder;
+
+
+}
+
+
+@media (max-width: 750px) {
+section { 
+    width:300px;
+}
+footer p { 
+    color:black
+}
+
+
+}
+
+
+
+.box { 
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 1px 2px 1px 1px  rgba(255, 0, 247, 0.608);
+    width:600px;
+    height:500px;
+    padding:50px;
+    margin: auto;
+    font-size: 1rem;
+    text-align:center;
+   
+}
+
+.box p { 
+    font-size: 1.5rem;
+    color:black;
+    font-weight: normal;
+}
+.box input { 
+    padding:3px
+}
+
+.box #calcular { 
+
+    width:250px;
+    height:80px;
+    border-radius:10px;
+    border:1px solid rgba(0, 0, 0, 0.185);
+    background-color: rgb(149, 62, 255);
+    color:white;
+    font-size:1.5rem;
+    text-transform: uppercase;
+    cursor: pointer;
+
+    
+
+}
+
+
+
+footer { 
+text-align:center;
+color:white;
+font-weight: bolder;
+}
+
+#res {
+    margin-top:20px;
+    padding:10px;
+    text-align:center;
+    font-size:1.5rem
+    
+}
