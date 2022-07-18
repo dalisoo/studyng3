@@ -4,15 +4,20 @@
     box-sizing: border-box;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+
+
+
+
 body { 
-    background-color: rgb(209, 209, 209);
+    background-color: #542901;
 }
 
 #box {
-    background-color: rgb(255, 255, 255);
+    background-image: linear-gradient(to left, #fc9b40, #bc5d04);
     border-radius: 10px;
     box-shadow: 1px 2px 1px 1px  rgba(255, 0, 0, 0.19);
-    width:1300px;
+    width:98%;
     margin-top:100px;
     height:600px;
     margin:  50px auto;
@@ -22,27 +27,28 @@ body {
     justify-content: space-between;
 }
 
-#box h1 {
-    font-size:3rem
+#box h1 > img {
+    width:150px;
+    font-size:3rem;
+    color: white;
 }
 #box p { 
-    font-size:1.5rem
+    font-size:1.5rem;
+    color:white;
 }
 
 
 #left { 
-    width:900px;
+    width:70%;
     height:500px;
     background-color: rgba(223, 87, 87, 0.026);
-    margin:10px
 }
 
 .filmes { 
     border-radius:10px;
-    background-color: rgba(255, 34, 0, 0.3);
+    background-color: #9e4a0000;
     width:100%;
-    margin-top:50px;
-    padding-top:20px;
+    margin-top:20px;
     height:380px;
     display: flex;
     flex-direction: wrap;
@@ -51,41 +57,148 @@ body {
 .filmes img { 
     width:200px;
     height:280px;
-    padding:5px
+    border-radius:10px;
+    border: 5px solid rgba(73, 49, 6, 0.57);
+    margin-left: 60px;
 }
 
 #erased, #naruto, #hxh, #inazuma{ 
     flex-direction: column;
-    width: 200px;
+    width: 260px;
     border-radius:8px;
-    font-size: 1.5rem;
-    margin:2px;
-
+    font-size: 1.2rem;
+    margin:1px;
+    color:white;
+    font-family: 'Roboto', sans-serif;
 }
 
 #erased input, #inazuma input, #naruto input, #hxh input { 
     display: none;
+    
 }
 
 #erased input + label::before, #inazuma input + label::before, #naruto input + label::before, #hxh input + label::before { 
         content: '';    
-        width:13px;
-        height:13px;
+        width:16px;
+        height:16px;
         border-radius:50%;
         border: 1px solid gray;
         display: inline-block;
         background-color: white;
+        margin-left:30px;
+        text-align: center;
+
 }
 #erased input:checked + label::before, #hxh input:checked + label::before, #inazuma input:checked + label::before , #naruto input:checked + label::before  { 
-    background-color: rgb(255, 81, 0);
+    background-color: rgb(0, 0, 0);
     border: 1px solid rgba(0, 0, 0, 0.495);
+    text-align: center;
+    
+    
 }
 
 #right { 
-        width:500px;
-        height:550px;
-        background-color: rgb(91, 91, 243);
-        margin-left:20px;
+        width:25%;
+        color:black;
+        height:580px;
+        background-color: #FFA95E;
         margin:10px;
         border-radius:10px;
+}
+#right #res { 
+    width:200px;     
+    height:290px;
+    margin: 0 auto;
+    margin-top:5px;
+}
+
+#btn { 
+    width:150px;
+    height:40px;
+    font-size:1.3rem;
+    background-image: linear-gradient(to left, rgb(139, 96, 32), #ff7b00);
+    cursor: pointer;
+    border: 1px solid rgba(0, 0, 0, 0.64);
+
+} 
+
+#res { 
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#res3,#res1,#res2 { 
+    color:black;
+    font-size:1rem;
+    padding:10px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@media (max-width:850px) { 
+    #box {
+        background-color: #ff7e05;
+        border-radius: 10px;
+        box-shadow: 1px 2px 1px 1px  rgba(255, 0, 0, 0.19);
+        width:100%;
+        margin-top:100px;
+        height:1600px;
+        margin:  50px auto;
+        font-size: 1rem;
+        text-align:center;
+        display: flex;
+        justify-content: space-between;  
+    }
+    #left { 
+        width:40%;
+        background-color: rgba(223, 87, 87, 0.026);
+        
+    }
+
+    #right { 
+        width:50%;
+        height:400px;
+        margin-top:500px;
+    }
+    .filmes { 
+        border-radius:10px;
+        background-color: #9e4a0000;
+        width:60%;
+        
+        display: flex;
+        flex-direction: column;
+    }
+    #box h1 {
+        font-size:3rem;
+        color: white;
+        padding:20px;
+        text-align: center;
+    }
+    #box p { 
+        font-size:1.5rem;
+        color:white;
+        padding:10px;
+        text-align: center;
+
+    }
+    .filmes img { 
+        width:200px;
+        height:200px;
+        border-radius:10px;
+        border: 5px solid rgba(110, 74, 8, 0.404);
+        margin:10px;
+    }
+    #erased, #naruto, #hxh, #inazuma{ 
+        flex-direction: column;
+        width: 200px;
+        border-radius:8px;
+        font-size: 1.5rem;
+        color:white;
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+    }
+    
+
+
+    
 }
