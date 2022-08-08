@@ -1,12 +1,44 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>a </title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>modal</title>
 </head>
 <body>
-  
+    <main>
+
+                                <!---- ESSE É O MODAL 1 -->
+
+        <input type="radio" name="radsex" id="f" checked onclick="abrirModal()">
+        <label for="f"></label> Numero 1 
+        <div class="bg-modal" id="modal"> 
+            <div class="modal">
+                <span id="close-modal" onclick="fecharModal()"> &times;</span>
+
+                <h2> Esse é o modal1</h2>
+                <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus saepe reiciendis repellat magni. Aspernatur eaque cum, nemo, deleniti, perspiciatis minima corporis eveniet obcaecati nesciunt exercitationem neque ab placeat aperiam eligendi.</p>
+            </div>
+        </div>
+
+                                <!---- ESSE É O MODAL 2 -->
+                                <input type="radio" name="radsex" id="ff">
+                                <label for="ff"></label> Numero 2 
+                                <div class="bg-modal" id="modal"> 
+                                    <div class="modal">
+                                        <span id="close-modal" onclick="fecharModal()"> &times;</span>
+                        
+                                        <h2> Esse é o modal2</h2>
+                                        <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus saepe reiciendis repellat magni. Aspernatur eaque cum, nemo, deleniti, perspiciatis minima corporis eveniet obcaecati nesciunt exercitationem neque ab placeat aperiam eligendi.</p>
+                                    </div>
+                                </div>
+
+        
+
+
+    </main>
 </body>
 </html>
