@@ -91,9 +91,7 @@ hr {
     margin-top: 20px;
     background-color: #202020;
 }
-main {
-    background: #fff url(img1/body.fundo.png);
-}
+
 container {
     width: 1100px;
     background-color: white;
@@ -297,7 +295,6 @@ footer p {
         width: 100%;
     }
     body {
-        overflow-x: hidden;
     }
 
     header img {

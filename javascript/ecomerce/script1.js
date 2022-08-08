@@ -54,7 +54,7 @@ let viewModal = productos.map(item=>{
 })
 })
 
-// aqui gera a lista dos  tenis dinamicamente 
+// aqui gera a lista das camisas dinamicamente 
 
 viewCamisas += camiseta.map(item=>{
   cami.innerHTML += `

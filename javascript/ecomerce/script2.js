@@ -20,7 +20,7 @@ document.body.addEventListener('click',(z)=>{
   window.open(`https://api.whatsapp.com/send/?phone=5581984636009&text=Olá Darlan, queria fazer um pedido de um ${modelo}`)
  }
   
- //55818463600
+ //558184636009
 
  // Pega os IDS dos produtos
  let numberKey =  +z.target.dataset.key
@@ -54,7 +54,7 @@ let viewModal = productos.map(item=>{
 })
 })
 
-// aqui gera a lista dos  tenis dinamicamente 
+// aqui gera a lista das bermudas dinamicamente 
 
 viewBermudas += bermudas.map(item=>{
   bermu.innerHTML += `
