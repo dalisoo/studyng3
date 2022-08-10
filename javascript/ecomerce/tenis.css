@@ -9,6 +9,7 @@
     --fonte3: "Sriracha", cursive;
 }
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Roboto:wght@300;400&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap');
 
 * {
     margin: 0;
@@ -28,11 +29,12 @@ li {
 
 header img {
     width: 100px;
+    margin-left:-530px;
 }
 header {
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     top: 0;
     left: 0;
@@ -47,27 +49,18 @@ nav {
 nav li {
     padding: 7px;
     text-transform: uppercase;
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: bolder;
     font-variant: small-caps;
-    font-family: var(--fonte2);
+    font-family: 'Lato', sans-serif;
 
-    border: 1px solid rgba(0, 0, 0, 0.349);
     margin: 10px;
     border-radius: 20px;
-    background-color: #5c6f7e;
 }
 nav li > a {
-    color: #ffffff;
+    color: #2a2a2ad3;
 }
-nav li:hover {
-    background-color: #3a5da8;
-    transition-duration: 0.7s;
-}
-nav li > a:hover {
-    color: #ffffff;
-    transition-duration: 0.7s;
-}
+
 .barra {
     background-color: #5c6f7e;
     width: 85%;
@@ -92,7 +85,6 @@ hr {
     background-color: #202020;
 }
 main {
-    background: #fff url(img1/body.fundo.png);
 }
 container {
     width: 1100px;
@@ -203,7 +195,7 @@ container {
 #q1 {
     width: 300px;
     height: 300px;
-    background-color: #5c6f7e;
+    background-color: #edf4f8;
     margin: 33px;
     text-align: center;
     padding: 7px;
@@ -211,28 +203,15 @@ container {
     flex-wrap: wrap;
     align-items: center;
     flex-direction: column;
-    border: 2px solid rgb(0, 0, 0);
 }
 
 #q1 h2,
 #q2 h2 {
-    font-family: "Roboto Condensed", sans-serif;
-    color: #ffffff;
+    font-family: var(--fonte2);
+    color: #383838;
     display: flex;
-    font-weight: bolder;
+    font-weight: 500;
     text-transform: none;
-}
-#q2 {
-    width: 300px;
-    height: 300px;
-    background-color: #bdbdbd;
-    margin: 33px;
-    text-align: center;
-    padding: 7px;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    flex-direction: column;
 }
 footer {
     border-radius: 25px 25px 0px 0px;
@@ -296,18 +275,21 @@ footer p {
         margin: 0 auto;
         width: 100%;
     }
-    
+   
 
     header img {
         margin-top: 30px;
+        margin-left: auto;
     }
     nav li {
         margin-top: 25px;
         margin: 10px;
         padding: 5px 15px;
-        font-size: 1.2rem;
         margin-top: 20px;
         margin-bottom: 20px;
+    }
+    nav li a { 
+        font-size:.9rem
     }
     .barra {
         background-color: #5c6f7e;

@@ -1,39 +1,40 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Passion+One&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Passion+One&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Passion+One&family=Sriracha&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Roboto:wght@300;400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Passion+One&family=Sriracha&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Roboto:wght@300;400&display=swap");
 
-:root { 
+:root {
     --fonte1: Verdana, Geneva, Tahoma, sans-serif;
-    --fonte2:'Passion One', cursive;
-    --fonte3:'Sriracha', cursive;
-
+    --fonte2: "Passion One", cursive;
+    --fonte3: "Sriracha", cursive;
 }
-* { 
-    margin:0;
-    padding:0;
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Roboto:wght@300;400&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
-a { 
+a {
     list-style: none;
-    color:rgb(255, 0, 0);
+    color: rgb(255, 0, 0);
     font-weight: bolder;
     text-decoration: none;
 }
-li { 
+li {
     text-decoration: none;
     list-style: none;
 }
 
-
-
-header img { 
-    width:100px;
+header img {
+    width: 100px;
+    margin-left:-530px;
 }
-header { 
+header {
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     top: 0;
     left: 0;
@@ -41,34 +42,23 @@ header {
     background-color: #fff;
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.308);
 }
-nav { 
-    display:flex;
+nav {
+    display: flex;
 }
 
-
-nav li { 
-    padding:7px;
+nav li {
+    padding: 7px;
     text-transform: uppercase;
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: bolder;
     font-variant: small-caps;
-    font-family: var(--fonte2);
+    font-family: 'Lato', sans-serif;
 
-    border: 1px solid rgba(0, 0, 0, 0.349);
     margin: 10px;
-    border-radius:20px;
-    background-color: #5c6f7e;
+    border-radius: 20px;
 }
-nav li > a { 
-    color:#ffffff
-}
-nav li:hover { 
-    background-color: #3a5da8;
-    transition-duration: 0.7s;
-}
-nav li > a:hover { 
-    color:#ffffff;
-    transition-duration: 0.7s;
+nav li > a {
+    color: #2a2a2ad3;
 }
 .barra { 
     
@@ -159,26 +149,27 @@ nav li > a:hover {
 
                 /* CONFIGURAÇÃO ABAIXO ------------- */
                 @media (max-width:500px) { 
-                    header { 
+                    header {
                         flex-direction: column;
-                        padding:0;
-                        margin:  0 auto;
-                        width:100%
-                    } 
-                    body { 
-                        overflow-x: hidden
+                        padding: 0;
+                        margin: 0 auto;
+                        width: 100%;
                     }
+                   
                 
-                    header img { 
-                        margin-top:30px;
+                    header img {
+                        margin-top: 30px;
+                        margin-left: auto;
                     }
-                    nav li { 
-                        margin-top:25px;
+                    nav li {
+                        margin-top: 25px;
                         margin: 10px;
                         padding: 5px 15px;
-                        font-size:1.3rem;
-                        margin-top:20px;
-                        margin-bottom:20px
+                        margin-top: 20px;
+                        margin-bottom: 20px;
+                    }
+                    nav li a { 
+                        font-size:.9rem
                     }
                     .barra { 
                     
@@ -242,23 +233,23 @@ nav li > a:hover {
                     
                 }
                 @media (max-width:414px) { 
-                    header { 
+                    header {
                         flex-direction: column;
-                        padding:0;
+                        padding: 0;
                         margin: 0 auto;
-                        width:100%
-                    } 
-                
-                    header img { 
-                        margin-top:30px;
+                        width: 100%;
                     }
-                    nav li { 
-                        margin-top:25px;
+                
+                    header img {
+                        margin-top: 30px;
+                    }
+                    nav li {
+                        margin-top: 25px;
                         padding: 6px;
                         margin: 4px;
-                        font-size:1rem;
-                        margin-top:20px;
-                        margin-bottom:20px
+                        font-size: 1rem;
+                        margin-top: 20px;
+                        margin-bottom: 20px;
                     }
                     .barra { 
                     
